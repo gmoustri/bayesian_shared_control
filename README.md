@@ -31,9 +31,9 @@ For more technical information see the following paper:
 *Moustris, G.P., I. Alamanos and C. S. Tzafestas. “**Safe Shared-Control Teleoperation of UGVs using Bayesian Intention Estimation.**” In IEEE International Conference on Advanced Intelligent Mechatronics (AIM), 2026.* <a href="https://www.researchgate.net/publication/408658829_Safe_Shared-Control_Teleoperation_of_UGVs_using_Bayesian_Intention_Estimation"> (PDF in RG) </a>
 <table> 
     <tr> 
-          <td><img src="./assets/assisted.gif" width="100 vw"></td> 
+          <td><img src="./assets/assisted.gif" width="60 vw"></td> 
     <tr>    
-          <td><img src="./assets/FPV.gif" width="100 vw"></td> 
+          <td><img src="./assets/FPV.gif" width="60 vw"></td> 
     </tr> 
     </tr> 
         <tr> 
