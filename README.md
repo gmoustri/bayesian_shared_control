@@ -30,12 +30,12 @@ For more technical information see the following paper:
 
 *Moustris, G.P., I. Alamanos and C. S. Tzafestas. “**Safe Shared-Control Teleoperation of UGVs using Bayesian Intention Estimation.**” In IEEE International Conference on Advanced Intelligent Mechatronics (AIM), 2026.* <a href="https://www.researchgate.net/publication/408658829_Safe_Shared-Control_Teleoperation_of_UGVs_using_Bayesian_Intention_Estimation"> (PDF in RG) </a>
 
-<p align="center"><strong>First-Person View (FPV)</strong></p>
+<p align="center"><strong> FPV Teleoperation with Robotnik Summit-XL</strong></p>
 <p align="center">
   <img src="./assets/FPV.gif" width="70%">
 </p>
 
-<p align="center"><strong>Gazebo Simulation</strong></p>
+<p align="center"><strong>Teleoperation of TurtleBot3 Waffle in Gazebo Simulation</strong></p>
 <p align="center">
   <img src="./assets/gazebo.gif" width="70%">
 </p>
