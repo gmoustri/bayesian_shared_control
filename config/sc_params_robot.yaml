@@ -1,0 +1,19 @@
+/shared_controller/shared_controller:
+  ros__parameters:
+    cluster_topic: "/dwal_planner/clusters_near"
+    user_cmd_topic: "/cmd_vel_web"
+    output_cmd_topic: "/shared_control_teleop/cmd_vel"
+    odom_topic: "/Odometry"
+    joy_topic: "/joy_web"
+    r2_button_index: 7 #zero-based indexing!!!
+    use_stamped_twist_input: false
+    use_stamped_twist_output: false
+
+    v_low: 0.3         # clusers hysteresis low threshold (m/s)
+    v_high: 0.4       # clusters hysteresis high threshold (m/s) 
+
+    c_max: 255.0        # cost normalization denominator (Nav2 costmap max typically 255)
+    alpha: 0.4          # (0,1] higher -> follow user intent more, lower -> prioritize safety cost more
+    s_min: 0.2          # (0,1] minimum speed scaling in velocity damping
+    Kphi: 1.0           # scale of w->phi    
+    Kmax: 4.0           # max curvature in DWAL                   ===> CROSS CHECK IN DWAL YAML ALSO!!!!

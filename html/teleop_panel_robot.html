@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Teleop Panel</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/eventemitter2@6.4.9/lib/eventemitter2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/roslib/build/roslib.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.110.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.110.0/examples/js/controls/OrbitControls.js"></script>
+
+  <link rel="stylesheet" href="teleop_panel.css">
+
+</head>
+
+<body>
+
+  <div id="topbar">
+    <b>Teleop Panel</b>
+    <span id="status">DISCONNECTED</span>
+    <input id="ws" value="ws://192.168.0.200:9092" style="width:320px">
+    <button onclick="connect()">Connect</button>
+     <button id="recordBtn">Start Recording</button>
+    <button id="keepBtn" style="display:none;">Keep</button>
+    <button id="deleteBtn" style="display:none;">Delete</button>
+    <span id="recordStatus"></span>
+  </div>
+
+  <div id="main">
+    <div class="panel">
+      <div class="panelHeader">3D</div>
+      <div class="panelBody">
+        <div id="viewer"></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="panelHeader">Camera</div>
+      <div class="panelBody">
+        <img id="video"
+          src="http://192.168.0.200:8080/stream?topic=/robot/front_rgbd_camera/color/image_raw&type=mjpeg&quality=50&width=640&height=360">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const FIXED_FRAME = "camera_init";
+    const FOLLOW_FRAME = "base_link";
+    const TOPICS = {
+      tf: "/tf",
+      tf_static: "/tf_static",
+      odom: "/Odometry",
+      costmap: "/local_costmap/obstacle_layer",
+      markers_far: "/dwal_planner/cluster_markers_far",
+      markers_near: "/dwal_planner/cluster_markers_near",
+      footprint: "/local_costmap/published_footprint",
+      path_human: "/shared_controller/path_human",
+      path_shared: "/shared_controller/path_shared"
+    };
+  </script>
+  <script src="teleop_panel.js"></script>
+</body>
+
+</html>
