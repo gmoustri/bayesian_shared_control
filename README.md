@@ -23,7 +23,7 @@ To use the controller, you must:
 
 The package has been tested locally in a Gazebo simulation and on a Robotnik Summit XL mobile robot.
 
-**Author:** George P. Moustris  
+**Author: George P. Moustris**  
 **Affiliation:** [HERON - Hellenic Robotics Center of Excellence](https://heron-robotics-coe.eu/)
 
 For more technical information see the following paper:
