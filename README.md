@@ -32,7 +32,9 @@ For more technical information see the following paper:
 <table> 
     <tr> 
           <td><img src="./assets/assisted.gif" width="100 vw"></td> 
+    <tr>    
           <td><img src="./assets/FPV.gif" width="100 vw"></td> 
+    </tr> 
     </tr> 
         <tr> 
           <td><img src="./assets/gazebo.gif" width="100 vw"></td> 
